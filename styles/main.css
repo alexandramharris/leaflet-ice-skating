@@ -1,0 +1,246 @@
+/* Main styles */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+#map {
+  height: 675px;
+}
+
+h1 {
+  background: #fff;
+  color: #000;
+  font-family: 'Chronicle Display Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+h2 {
+  display: block;
+  background: #fff;
+  color: #006FBA;
+  font-family: 'Helvetica Neue Condensed', sans-serif;
+  font-weight: Heavy;
+  font-size: 16px;
+}
+
+h3 {
+  color: #767676;
+  font-family: "HelveticaNeue-Roman", sans-serif;
+  font-size: 13px;
+  line-height: 1;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #767676;
+}
+
+h4 {
+  display: block;
+  background: #fff;
+  color: #006FBA;
+  font-family: 'Helvetica Neue Condensed', sans-serif;
+  font-weight: Heavy;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+header {
+  background: #fff;
+  color: #000;
+  font-family: 'Helvetica', sans-serif;
+  margin: 3rem 9rem 0rem 9rem;
+}
+
+#map {
+  margin: 2rem 9rem 0rem 9rem;
+}
+
+article {
+  background: #fff;
+  color: #000;
+  font-family: 'Helvetica', sans-serif;
+  margin: 2rem 9rem 0rem 9rem;
+}
+
+p {
+  background: #fff;
+  color: #000;
+  font-family: 'Chronicle Display Condensed', sans-serif;
+  font-size: 18px;
+}
+
+#relatedContentHead{
+  text-align: center;
+  border-top: 2px solid #000;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.relatedLinks{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.relatedPhotos:hover {
+  filter: brightness(125%);
+}
+
+.relatedPhotos:active {
+  filter: brightness(150%);
+}
+
+a, .photoHeadline{
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  max-width: 300px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #016FB9;
+}
+
+a:active {
+  color: #029aff;
+}
+
+
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  font-family: 'Helvetica', sans-serif;
+  background: #E7E7E7;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+  ". sentence sentence sentence button"
+  ". social social social ."
+  ". . . . ."
+}
+
+.footer-content{
+  text-align: center;
+}
+
+.footer-content h5{
+  grid-area: sentence;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+}
+
+.social{
+  grid-area: social;
+  list-style: none;
+  display: flex;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.social li {
+  margin: 0 15px;
+  justify-content: space-evenly;
+}
+
+.top-button {
+  grid-area: button;
+  text-align: center;
+  align-items: end;
+  margin: auto;
+}
+
+.footer-content {
+  grid-area: sentence;
+  margin: auto;
+}
+
+.footer-bottom {
+  grid-area: copyright;
+  margin: auto;
+  margin-left: 10px;
+}
+
+.footer-bottom p{
+  background-color: #E7E7E7;
+  text-align: left;
+  color: #999999;
+  font-size: 15px;
+  word-spacing: 2px;
+}
+
+.top-button a{
+  grid-area: button;
+  text-decoration: none;
+  padding: 10px;
+  font-family: sans-serif;
+  color: #fff;
+  background: #222;
+  border-radius: 100px;
+}
+
+@media screen and (max-width: 900px) {
+  header, article {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+#map {
+    height: 800px;
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  footer {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+    "sentence sentence sentence sentence"
+    ". social social button"
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .top-button a{
+    font-size: 75%;
+    padding: 5px;
+    font-family: sans-serif;
+    color: #fff;
+    background: #222;
+    border-radius: 100px;
+  }
+}
